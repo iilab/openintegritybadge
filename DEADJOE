@@ -1,0 +1,414 @@
+
+*** These modified files were found in JOE when it aborted on Sat Aug 17 19:38:47 2013
+*** JOE was aborted by UNIX signal 15
+
+*** File '(Unnamed)'
+autoindent
+
+*** File '(Unnamed)'
+root
+
+*** File 'sample.html'
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa
+1.0" dir="ltr" class="js"><head
+profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="shortcut icon"
+href="https://dev.openintegrity.org/misc/favicon.ico"
+type="image/vnd.microsoft.icon">
+<meta name="Generator" content="Drupal 7 (http://drupal.org)">
+  <title>Recent log messages | Open Integrity Index</title>
+  <style type="text/css" media="all">@import
+url("https://dev.openintegrity.org/modules/system/system.base.css?mrjicf");
+@import
+url("https://dev.openintegrity.org/modules/system/system.menus.css?mrjicf");
+@import
+url("https://dev.openintegrity.org/modules/system/system.messages.css?mrjicf");
+@import
+url("https://dev.openintegrity.org/modules/system/system.theme.css?mrjicf");</style>
+<style type="text/css" media="all">@import
+url("https://dev.openintegrity.org/modules/system/system.admin.css?mrjicf");
+@import
+url("https://dev.openintegrity.org/sites/all/modules/jquery_update/replace/ui/themes/base/jquery.ui.core.css?mrjicf");
+@import
+url("https://dev.openintegrity.org/themes/seven/jquery.ui.theme.css?mrjicf");
+@import
+url("https://dev.openintegrity.org/modules/contextual/contextual.css?mrjicf");</style>
+<style type="text/css" media="all">@import
+url("https://dev.openintegrity.org/modules/comment/comment.css?mrjicf");
+@import
+url("https://dev.openintegrity.org/sites/all/modules/date/date_api/date.css?mrjicf");
+@import
+url("https://dev.openintegrity.org/sites/all/modules/date/date_popup/themes/datepicker.1.7.css?mrjicf");
+@import
+url("https://dev.openintegrity.org/modules/field/theme/field.css?mrjicf");
+@import
+url("https://dev.openintegrity.org/sites/all/modules/logintoboggan/logintoboggan.css?mrjicf");
+@import url("https://dev.openintegrity.org/modules/node/node.css?mrjicf");
+@import url("https://dev.openintegrity.org/modules/user/user.css?mrjicf");
+@import
+url("https://dev.openintegrity.org/sites/all/modules/views/css/views.css?mrjicf");
+@import
+url("https://dev.openintegrity.org/sites/all/modules/admin_menu/admin_menu.css?mrjicf");
+@import
+url("https://dev.openintegrity.org/sites/all/modules/admin_menu/admin_menu.uid1.css?mrjicf");</style>
+<style type="text/css" media="all">@import
+url("https://dev.openintegrity.org/sites/all/modules/ctools/css/ctools.css?mrjicf");
+@import url("https://dev.openintegrity.org/modules/dblog/dblog.css?mrjicf");
+@import
+url("https://dev.openintegrity.org/sites/all/modules/l10n_client/l10n_client.css?mrjicf");
+@import
+url("https://dev.openintegrity.org/sites/all/modules/ctools/css/modal.css?mrjicf");
+@import
+url("https://dev.openintegrity.org/sites/all/modules/get_form_id/get_form_id.css?mrjicf");
+@import
+url("https://dev.openintegrity.org/sites/all/modules/context/plugins/context_reaction_block.css?mrjicf");</style>
+<style type="text/css" media="screen">@import
+url("https://dev.openintegrity.org/themes/seven/reset.css?mrjicf");
+@import
+url("https://dev.openintegrity.org/themes/seven/style.css?mrjicf");</style>
+
+<!--[if lte IE 8]>
+<link type="text/css" rel="stylesheet"
+href="https://dev.openintegrity.org/themes/seven/ie.css?mrjicf" media="all"
+/>
+<![endif]-->
+
+<!--[if lte IE 7]>
+<link type="text/css" rel="stylesheet"
+href="https://dev.openintegrity.org/themes/seven/ie7.css?mrjicf" media="all"
+/>
+<![endif]-->
+
+<!--[if lte IE 6]>
+<link type="text/css" rel="stylesheet"
+href="https://dev.openintegrity.org/themes/seven/ie6.css?mrjicf" media="all"
+/>
+<![endif]-->
+  <script type="text/javascript"
+src="https://dev.openintegrity.org/sites/all/modules/jquery_update/replace/jquery/1.7/jquery.js?v=1.7.1"></script>
+<script type="text/javascript"
+src="https://dev.openintegrity.org/misc/jquery.once.js?v=1.2"></script>
+<script type="text/javascript"
+src="https://dev.openintegrity.org/misc/drupal.js?mrjicf"></script>
+<script type="text/javascript"
+src="https://dev.openintegrity.org/sites/all/modules/jquery_update/replace/ui/ui/jquery.ui.core.js?v=1.8.11"></script>
+<script type="text/javascript"
+src="https://dev.openintegrity.org/sites/all/modules/jquery_update/replace/ui/ui/jquery.ui.widget.js?v=1.8.11"></script>
+<script type="text/javascript"
+src="https://dev.openintegrity.org/sites/all/modules/jquery_update/replace/ui/external/jquery.cookie.js?v=67fb34f6a866c40d0570"></script>
+<script type="text/javascript"
+src="https://dev.openintegrity.org/sites/all/modules/jquery_update/replace/misc/jquery.form.js?v=2.69"></script>
+<script type="text/javascript"
+src="https://dev.openintegrity.org/sites/all/modules/jquery_update/replace/ui/ui/jquery.ui.mouse.js?v=1.8.11"></script>
+<script type="text/javascript"
+src="https://dev.openintegrity.org/sites/all/modules/jquery_update/replace/ui/ui/jquery.ui.draggable.js?v=1.8.11"></script>
+<script type="text/javascript"
+src="https://dev.openintegrity.org/sites/all/modules/jquery_update/replace/ui/ui/jquery.ui.droppable.js?v=1.8.11"></script>
+<script type="text/javascript"
+src="https://dev.openintegrity.org/sites/all/modules/jquery_update/replace/ui/ui/jquery.ui.sortable.js?v=1.8.11"></script>
+<script type="text/javascript"
+src="https://dev.openintegrity.org/modules/contextual/contextual.js?v=1.0"></script>
+<script type="text/javascript"
+src="https://dev.openintegrity.org/misc/form.js?v=7.22"></script>
+<script type="text/javascript"
+src="https://dev.openintegrity.org/misc/ajax.js?v=7.22"></script>
+<script type="text/javascript"
+src="https://dev.openintegrity.org/sites/all/modules/admin_menu/admin_devel/admin_devel.js?mrjicf"></script>
+<script type="text/javascript"
+src="https://dev.openintegrity.org/sites/all/modules/admin_menu/admin_menu.js?mrjicf"></script>
+<script type="text/javascript"
+src="https://dev.openintegrity.org/sites/all/modules/l10n_client/jquery.hotkeys.js?mrjicf"></script>
+<script type="text/javascript"
+src="https://dev.openintegrity.org/misc/jquery.cookie.js?mrjicf"></script>
+<script type="text/javascript"
+src="https://dev.openintegrity.org/sites/all/modules/l10n_client/l10n_client.js?mrjicf"></script>
+<script type="text/javascript"
+src="https://dev.openintegrity.org/misc/textarea.js?mrjicf"></script>
+<script type="text/javascript"
+src="https://dev.openintegrity.org/sites/all/modules/devel/devel_krumo_path.js?mrjicf"></script>
+<script type="text/javascript"
+src="https://dev.openintegrity.org/misc/progress.js?v=7.22"></script>
+<script type="text/javascript"
+src="https://dev.openintegrity.org/sites/all/modules/ctools/js/modal.js?mrjicf"></script>
+<script type="text/javascript"
+src="https://dev.openintegrity.org/sites/all/modules/get_form_id/get_form_id.js?mrjicf"></script>
+<script type="text/javascript"
+src="https://dev.openintegrity.org/sites/all/modules/context/plugins/context_reaction_block.js?mrjicf"></script>
+<script type="text/javascript"
+src="https://dev.openintegrity.org/misc/collapse.js?v=7.22"></script>
+<script type="text/javascript"
+src="https://dev.openintegrity.org/misc/tableheader.js?mrjicf"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings,
+{"basePath":"\/","pathPrefix":"en\/","ajaxPageState":{"theme":"seven","theme_token":"0upZ-PwwNgf7sXg14y-W9m9eGUIFwJcGGdHtHJjMvSg","js":{"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.7\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/jquery.ui.core.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/jquery.ui.widget.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/external\/jquery.cookie.js":1,"sites\/all\/modules\/jquery_update\/replace\/misc\/jquery.form.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/jquery.ui.mouse.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/jquery.ui.draggable.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/jquery.ui.droppable.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/jquery.ui.sortable.js":1,"modules\/contextual\/contextual.js":1,"misc\/form.js":1,"misc\/ajax.js":1,"sites\/all\/modules\/admin_menu\/admin_devel\/admin_devel.js":1,"sites\/all\/modules\/admin_menu\/admin_menu.js":1,"sites\/all\/modules\/l10n_client\/jquery.hotkeys.js":1,"misc\/jquery.cookie.js":1,"sites\/all\/modules\/l10n_client\/l10n_client.js":1,"misc\/textarea.js":1,"sites\/all\/modules\/devel\/devel_krumo_path.js":1,"misc\/progress.js":1,"sites\/all\/modules\/ctools\/js\/modal.js":1,"sites\/all\/modules\/get_form_id\/get_form_id.js":1,"sites\/all\/modules\/context\/plugins\/context_reaction_block.js":1,"misc\/collapse.js":1,"misc\/tableheader.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/system\/system.admin.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"modules\/contextual\/contextual.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/logintoboggan\/logintoboggan.css":1,"modules\/node\/node.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/admin_menu\/admin_menu.css":1,"sites\/all\/modules\/admin_menu\/admin_menu.uid1.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"modules\/dblog\/dblog.css":1,"sites\/all\/modules\/l10n_client\/l10n_client.css":1,"sites\/all\/modules\/ctools\/css\/modal.css":1,"sites\/all\/modules\/get_form_id\/get_form_id.css":1,"sites\/all\/modules\/context\/plugins\/context_reaction_block.css":1,"themes\/seven\/reset.css":1,"themes\/seven\/style.css":1,"themes\/seven\/ie.css":1,"themes\/seven\/ie7.css":1,"themes\/seven\/ie6.css":1}},"CToolsModal":{"loadingText":"Loading...","closeText":"Close
+Window","closeImage":"\u003Cimg
+src=\u0022https:\/\/dev.openintegrity.org\/sites\/all\/modules\/ctools\/images\/icon-close-window.png\u0022
+alt=\u0022Close window\u0022 title=\u0022Close window\u0022
+\/\u003E","throbber":"\u003Cimg
+src=\u0022https:\/\/dev.openintegrity.org\/sites\/all\/modules\/ctools\/images\/throbber.gif\u0022
+alt=\u0022Loading\u0022 title=\u0022Loading...\u0022
+\/\u003E"},"get-form-id-style":{"modalSize":{"type":"fixed","width":600,"height":"auto"},"modalOptions":{"opacity":0.8,"background-color":"#777"},"animation":"fadeIn"},"tableHeaderOffset":"Drupal.admin.height","admin_menu":{"destination":"destination=admin\/reports\/dblog","hash":"b01d9af9c58f783f4647ffd2a099ee49","basePath":"\/en\/admin_menu","margin_top":1,"position_fixed":1},"password":{"strengthTitle":"Password
+compliance:"},"type":"setting"});
+//--><!]]>
+</script>
+</head>
+<body class="html not-front logged-in no-sidebars page-admin
+page-admin-reports page-admin-reports-dblog i18n-en admin-menu"
+style="border-bottom-width: 0px;">
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Skip
+to main content</a>
+  </div>
+    
+  <div id="branding" class="clearfix">
+    <h2 class="element-invisible">You are here</h2><div
+class="breadcrumb"><a href="/en">Home</a> » <a
+href="/en/admin">Administration</a> » <a href="/en/admin/reports"
+title="View reports, updates, and errors.">Reports</a></div>
+<h1 class="page-title">Recent log messages</h1>
+              </div>
+
+  <div id="page">
+          <div class="tabs-secondary clearfix"></div>
+    
+    <div id="content" class="clearfix">
+      <div class="element-invisible"><a id="main-content"></a></div>
+                    <div id="help">
+                  </div>
+                  <form class="container" action="/en/admin/reports/dblog"
+                  method="post" id="dblog-filter-form"
+                  accept-charset="UTF-8"><div><fieldset class="collapsible
+                  collapsed form-wrapper collapse-processed"
+                  id="edit-filters"><legend><span class="fieldset-legend"><a
+                  class="fieldset-title" href="#"><span
+                  class="fieldset-legend-prefix
+                  element-invisible">Show</span> Filter log
+                  messages</a><span
+                  class="summary"></span></span></legend><div
+                  class="fieldset-wrapper"><div class="form-item
+                  form-type-select form-item-type">
+  <label for="edit-type">Type </label>
+ <select multiple="multiple" name="type[]" id="edit-type" size="8"
+class="form-select"><option value="content">content</option><option
+value="cron">cron</option><option
+value="i18n_string">i18n_string</option><option
+value="node">node</option><option value="php">php</option><option
+value="rules">rules</option></select>
+</div>
+<div class="form-item form-type-select form-item-severity">
+  <label for="edit-severity">Severity </label>
+ <select multiple="multiple" name="severity[]" id="edit-severity" size="8"
+class="form-select"><option value="0">emergency</option><option
+value="1">alert</option><option value="2">critical</option><option
+value="3">error</option><option value="4">warning</option><option
+value="5">notice</option><option value="6">info</option><option
+value="7">debug</option></select>
+</div>
+<div class="container-inline form-actions form-wrapper"
+id="edit-actions"><input type="submit" id="edit-submit" name="op"
+value="Filter" class="form-submit"></div></div></fieldset>
+<input type="hidden" name="form_build_id"
+value="form-tGtHUMUk_6k-gcocjXz3Iu02ptoJglEoTo2dQRCRmHo">
+<input type="hidden" name="form_token"
+value="Dxo1Yh4D-34AMVvCuQKJ9yVxcY6bBMdsosgz1o22ZUw">
+<input type="hidden" name="form_id" value="dblog_filter_form">
+<div class="contextual-links-wrapper contextual-links-processed"><a
+class="contextual-links-trigger" href="#">Configure</a><ul
+class="contextual-links"><li class="0 first last"><a
+href="/en/ajax/get_form_id/nojs/dblog_filter_form" class="ctools-use-modal
+ctools-modal-get-form-id-style ctools-use-modal-processed">Form ID:
+dblog_filter_form</a></li>
+</ul></div></div></form><form class="container"
+action="/en/admin/reports/dblog" method="post" id="dblog-clear-log-form"
+accept-charset="UTF-8"><div><fieldset class="collapsible collapsed
+form-wrapper collapse-processed" id="edit-dblog-clear"><legend><span
+class="fieldset-legend"><a class="fieldset-title" href="#"><span
+class="fieldset-legend-prefix element-invisible">Show</span> Clear log
+messages</a><span class="summary"></span></span></legend><div
+class="fieldset-wrapper"><div class="fieldset-description">This will
+permanently remove the log messages from the database.</div><input
+type="submit" id="edit-clear" name="op" value="Clear log messages"
+class="form-submit"></div></fieldset>
+<input type="hidden" name="form_build_id"
+value="form-dL3jDxtTVq8oPP5YeIRFSQI8Z1iVuo1AuBrFCR7CNvM">
+<input type="hidden" name="form_token"
+value="lvlJB_5xBG_mByOxkbn17RyVf7-AnAqZziGHzJVhbf8">
+<input type="hidden" name="form_id" value="dblog_clear_log_form">
+<div class="contextual-links-wrapper contextual-links-processed"><a
+class="contextual-links-trigger" href="#">Configure</a><ul
+class="contextual-links"><li class="0 first last"><a
+href="/en/ajax/get_form_id/nojs/dblog_clear_log_form"
+class="ctools-use-modal ctools-modal-get-form-id-style
+ctools-use-modal-processed">Form ID: dblog_clear_log_form</a></li>
+</ul></div></div></form><table class="sticky-header" style="position: fixed;
+top: 21px; left: 40px; visibility: hidden;"><thead
+style=""><tr><th></th><th><a
+href="/en/admin/reports/dblog?sort=asc&amp;order=Type" title="sort by Type"
+class="active">Type</a></th><th class="active"><a
+href="/en/admin/reports/dblog?sort=asc&amp;order=Date" title="sort by Date"
+class="active">Date<img
+src="https://dev.openintegrity.org/themes/seven/images/arrow-asc.png"
+width="13" height="13" alt="sort ascending" title="sort
+ascending"></a></th><th>Message</th><th><a
+href="/en/admin/reports/dblog?sort=asc&amp;order=User" title="sort by User"
+class="active">User</a></th><th>Operations</th> </tr></thead></table><table
+id="admin-dblog" class="sticky-enabled tableheader-processed sticky-table">
+ <thead><tr><th></th><th><a
+href="/en/admin/reports/dblog?sort=asc&amp;order=Type" title="sort by Type"
+class="active">Type</a></th><th class="active"><a
+href="/en/admin/reports/dblog?sort=asc&amp;order=Date" title="sort by Date"
+class="active">Date<img
+src="https://dev.openintegrity.org/themes/seven/images/arrow-asc.png"
+width="13" height="13" alt="sort ascending" title="sort
+ascending"></a></th><th>Message</th><th><a
+href="/en/admin/reports/dblog?sort=asc&amp;order=User" title="sort by User"
+class="active">User</a></th><th>Operations</th> </tr></thead>
+<tbody>
+ <tr class="dblog-i18n-string dblog-notice odd"><td
+class="icon"></td><td>i18n_string</td><td class="active">08/17/2013 -
+18:23</td><td><a href="/en/admin/reports/event/7301">Updated string
+rules:rules_config:rules_update_entry...</a></td><td><a href="/en/user/1"
+title="View user profile." class="username">root</a></td><td></td> </tr>
+ <tr class="dblog-i18n-string dblog-notice even"><td
+class="icon"></td><td>i18n_string</td><td class="active">08/17/2013 -
+18:23</td><td><a href="/en/admin/reports/event/7300">Updated string
+rules:rules_config:rules_update_entry...</a></td><td><a href="/en/user/1"
+title="View user profile." class="username">root</a></td><td></td> </tr>
+ <tr class="dblog-content dblog-notice odd"><td
+class="icon"></td><td>content</td><td class="active">08/17/2013 -
+18:18</td><td><a href="/en/admin/reports/event/7299">evidence: updated
+Negating evidence Activity of issue...</a></td><td><a href="/en/user/1"
+title="View user profile." class="username">root</a></td><td><a
+href="/en/node/798">view</a></td> </tr>
+ <tr class="dblog-content dblog-notice even"><td
+class="icon"></td><td>content</td><td class="active">08/17/2013 -
+18:17</td><td><a href="/en/admin/reports/event/7298">evidence: added
+Supporting evidence Correct SSL...</a></td><td><a href="/en/user/1"
+title="View user profile." class="username">root</a></td><td><a
+href="/en/node/2245">view</a></td> </tr>
+ <tr class="dblog-content dblog-notice odd"><td
+class="icon"></td><td>content</td><td class="active">08/17/2013 -
+18:14</td><td><a href="/en/admin/reports/event/7297">evidence: updated
+Supporting evidence SSL by default.</a></td><td><a href="/en/user/1"
+title="View user profile." class="username">root</a></td><td><a
+href="/en/node/2242">view</a></td> </tr>
+ <tr class="dblog-content dblog-notice even"><td
+class="icon"></td><td>content</td><td class="active">08/17/2013 -
+18:14</td><td><a href="/en/admin/reports/event/7296">entry: updated Open
+Integrity Index.</a></td><td><a href="/en/user/1" title="View user profile."
+class="username">root</a></td><td><a href="/en/node/1012">view</a></td>
+</tr>
+ <tr class="dblog-php dblog-notice odd"><td
+class="icon"></td><td>php</td><td class="active">08/17/2013 -
+18:14</td><td><a href="/en/admin/reports/event/7295">Notice: Undefined
+index: field_entry_score in locale...</a></td><td><a href="/en/user/1"
+title="View user profile." class="username">root</a></td><td></td> </tr>
+ <tr class="dblog-content dblog-notice even"><td
+class="icon"></td><td>content</td><td class="active">08/17/2013 -
+18:13</td><td><a href="/en/admin/reports/event/7294">evidence: updated
+Supporting evidence Public issue...</a></td><td><a href="/en/user/1"
+title="View user profile." class="username">root</a></td><td><a
+href="/en/node/2234">view</a></td> </tr>
+ <tr class="dblog-content dblog-notice odd"><td
+class="icon"></td><td>content</td><td class="active">08/17/2013 -
+18:13</td><td><a href="/en/admin/reports/event/7293">evidence: updated
+Supporting evidence Open Source...</a></td><td><a href="/en/user/1"
+title="View user profile." class="username">root</a></td><td><a
+href="/en/node/2231">view</a></td> </tr>
+ <tr class="dblog-content dblog-notice even"><td
+class="icon"></td><td>content</td><td class="active">08/17/2013 -
+18:10</td><td><a href="/en/admin/reports/event/7292">evidence: updated
+Supporting evidence Open Source...</a></td><td><a href="/en/user/1"
+title="View user profile." class="username">root</a></td><td><a
+href="/en/node/2231">view</a></td> </tr>
+ <tr class="dblog-node dblog-error odd"><td
+class="icon"></td><td>node</td><td class="active">08/17/2013 -
+18:10</td><td><a
+href="/en/admin/reports/event/7291">EntityMetadataWrapperException: Invalid
+data value...</a></td><td><a href="/en/user/1" title="View user profile."
+class="username">root</a></td><td></td> </tr>
+ <tr class="dblog-content dblog-notice even"><td
+class="icon"></td><td>content</td><td class="active">08/17/2013 -
+18:06</td><td><a href="/en/admin/reports/event/7288">evidence: updated
+Supporting evidence Open Source...</a></td><td><a href="/en/user/1"
+title="View user profile." class="username">root</a></td><td><a
+href="/en/node/2231">view</a></td> </tr>
+ <tr class="dblog-node dblog-error odd"><td
+class="icon"></td><td>node</td><td class="active">08/17/2013 -
+18:06</td><td><a
+href="/en/admin/reports/event/7287">EntityMetadataWrapperException: Invalid
+data value...</a></td><td><a href="/en/user/1" title="View user profile."
+class="username">root</a></td><td></td> </tr>
+ <tr class="dblog-content dblog-notice even"><td
+class="icon"></td><td>content</td><td class="active">08/17/2013 -
+18:04</td><td><a href="/en/admin/reports/event/7284">evidence: updated
+Supporting evidence Open Source...</a></td><td><a href="/en/user/1"
+title="View user profile." class="username">root</a></td><td><a
+href="/en/node/2231">view</a></td> </tr>
+ <tr class="dblog-node dblog-error odd"><td
+class="icon"></td><td>node</td><td class="active">08/17/2013 -
+18:04</td><td><a
+href="/en/admin/reports/event/7283">EntityMetadataWrapperException: Invalid
+data value...</a></td><td><a href="/en/user/1" title="View user profile."
+class="username">root</a></td><td></td> </tr>
+ <tr class="dblog-cron dblog-notice even"><td
+class="icon"></td><td>cron</td><td class="active">08/17/2013 -
+18:04</td><td><a href="/en/admin/reports/event/7280">Cron run
+completed.</a></td><td><span class="username">Anonymous (not
+verified)</span></td><td></td> </tr>
+ <tr class="dblog-content dblog-notice odd"><td
+class="icon"></td><td>content</td><td class="active">08/17/2013 -
+18:03</td><td><a href="/en/admin/reports/event/7279">evidence: updated
+Supporting evidence Open Source...</a></td><td><a href="/en/user/1"
+title="View user profile." class="username">root</a></td><td><a
+href="/en/node/2231">view</a></td> </tr>
+ <tr class="dblog-node dblog-error even"><td
+class="icon"></td><td>node</td><td class="active">08/17/2013 -
+18:03</td><td><a
+href="/en/admin/reports/event/7278">EntityMetadataWrapperException: Invalid
+data value...</a></td><td><a href="/en/user/1" title="View user profile."
+cla<html>
+<script type="text/javascript"
+src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<!--[if lt IE 9]>
+  <script type="text/javascript" src="/js/excanvas/excanvas.js"></script>
+<![endif]-->
+<script type="text/javascript" src="/js/spinners/spinners.min.js"></script>
+<script type="text/javascript" src="/js/tipped/tipped.js"></script>
+
+<link rel="stylesheet" type="text/css" href="/css/tipped/tipped.css"/>
+  
+<div class="badge">
+    <div class="icon">
+        <img width="40" height="40"
+src="https://dev.openintegrity.org/sites/all/themes/bootstrap/img/SomeNoneSome.png"/>
+    </div>
+    <div class="drawer">
+        <img width="180" height="40"
+src="https://dev.openintegrity.org/sites/all/themes/bootstrap/img/SomeNoneSome.png"/>
+    </div>
+    <div class="teaser">
+        
+    </div>
+</div>
+*** File '(Unnamed)'
+last_cr
+ctools
+rules
+decision_
+_locale
+
+*** File '(Unnamed)'
+openintegrity_helper/openintegrity_helper.module
+openintegrity_helper/openintegrity_helper.module
+openintegrity_helper/openintegrity_helper.module
+openintegrity_helper/openintegrity_helper.module
+openintegrity_helper/openintegrity_helper.module
+sample.html
+js/oiibadge.js
+js/oiibadge.js
+css/oiibadge.css
+css/oiibadge.css
+sample.html
