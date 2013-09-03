@@ -2,7 +2,7 @@ jQuery(function($) {
 
   $('.entry').appear();
 
-  $(document.body).on('appear', '.entry', function(e, $affected) {
+  $('body').on('appear', '.entry', function(e, $affected) {
     badge="<img src='https://openintegrity.org/badge/img/oii-loader.gif' style='margin:5px;padding:0px;' height='24' width='24'>";
     var entry=$(this);
     if (!entry.hasClass('processed')) {
@@ -11,37 +11,37 @@ jQuery(function($) {
       nid = entry.attr('id');
       $.getJSON("https://openintegrity.org/api/badge?nid="+nid, function(data) {
         entry.html(data[0]['Badge'][0]);
-           
-        $('.badge').mouseenter(function() {
-          if (!$(this).children('.teaser').hasClass('opened')) { 
-            $(this).children('.drawer').addClass('active').show().css({left: -($(this).width())}).css({opacity:0});
-            $(this).children('.drawer').animate({left: 0},{duration: 200, queue: false});
-            $(this).children('.drawer').animate({opacity:1}, {duration:400, queue: false});
-          }
-        });
-        $('.badge').mouseleave(function() {
-          if (!$(this).children('.teaser').hasClass('opened')) { 
-            $(this).children('.drawer').removeClass('active').animate({left: -$(this).width()},{duration: 200, queue: false}).animate({opacity:0}, {duration:200,queue:false});
-          }
-        });
-    
-        $('.badge').click(function() {
-          var teaser=$(this).parent('.entry').children('.teaser');
-          var nid_click = $(this).parent('.entry').attr('id');
-          if(!teaser.hasClass('opened')) {
-            $.get("https://openintegrity.org/node/"+nid_click+"/overlay", function(data) {
-//                console.debug(data);
-                teaser.html(data);
-                teaser.addClass('opened').show().css({"opacity":0}).css({"z-index":1}).animate({opacity: 1}, 200);
-            });                                        
-          }
-          else {
-            teaser.removeClass('opened').show().css({"opacity": 1}).css({"z-index": -1}).animate({opacity: 0}, 200);      
-          }
-        });
       })    
     }
   })     
+
+  $('body').on('mouseenter', '.badge', function() {
+    if (!$(this).children('.teaser').hasClass('opened')) { 
+      $(this).children('.drawer').addClass('active').show().css({left: -($(this).width())}).css({opacity:0});
+      $(this).children('.drawer').animate({left: 0},{duration: 200, queue: false});
+      $(this).children('.drawer').animate({opacity:1}, {duration:400, queue: false});
+    }
+  });
+  
+  $('body').on('mouseleave', '.badge', function() {
+    if (!$(this).children('.teaser').hasClass('opened')) { 
+      $(this).children('.drawer').removeClass('active').animate({left: -$(this).width()},{duration: 200, queue: false}).animate({opacity:0}, {duration:200,queue:false});
+    }
+  });
+   
+  $('body').on('click', '.badge', function() {
+    var teaser=$(this).parent('.entry').children('.teaser');
+    var nid_click = $(this).parent('.entry').attr('id');
+    if(!teaser.hasClass('opened')) {
+      $.get("https://openintegrity.org/node/"+nid_click+"/overlay", function(data) {
+        teaser.html(data);
+        teaser.addClass('opened').show().css({"opacity":0}).css({"z-index":1}).animate({opacity: 1}, 200);
+      });                                        
+    }
+    else {
+      teaser.removeClass('opened').show().css({"opacity": 1}).css({"z-index": -1}).animate({opacity: 0}, 200);      
+    }
+  });
   
   $.force_appear();
   
