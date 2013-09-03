@@ -2,62 +2,38 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr">  
   <head profile="http://www.w3.org/1999/xhtml/vocab">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"  />
     <link type="text/css" rel="stylesheet" href="css/oiibadge.css" media="all" />
     <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
     <script type="text/javascript" src="js/oiibadge.js"></script>
+    <script src="js/jquery.infinite-carousel.js"></script>
+    <script>
+    jQuery(document).ready(function(){
+            jQuery("#viewport").incarousel("#simplePrevious", "#simpleNext");
+    });</script>
   </head>  
   <body>
-    <div class="wrapper">
-      <div class="badge">
-        <div class="icon">
-          <img width="34" height="34" src="img/AllSomeNone.png"/>
-        </div>
-        <div class="drawer">
-          <img width="96" height="34" src="img/DrawerAllSomeNone.png"/>
-        </div>
+    <h1>Open Integrity Index Badge - Example</h2>
+    <p>This is an example of html embed of the Open Integrity Index
+    Badge</p>
+    <table>
+    <tr>
+    <td>
+        Some text to push the badge to the right...
+    </td>
+    <td>
+      <div class="openintegrity">
+        <div class="entry" id="1012"></div>
+        <div class="entry" id="2044"></div>
+        <div class="entry" id="2138"></div>
+        <div class="entry" id="1950"></div>
+        <div class="entry" id="1856"></div>
+        <div class="entry" id="1762"></div>
+        <div class="entry" id="1668"></div>
+        <div class="entry" id="1574"></div>
       </div>
-      <div class="teaser">
-        <img width="506" height="406" src="img/SampleTeaser.png"/>
-      </div>
-    </div>
-    <div class="wrapper">
-      <div class="badge">
-        <div class="icon">
-          <img width="34" height="34" src="img/AllSomeNone.png"/>
-        </div>
-        <div class="drawer">
-          <img width="96" height="34" src="img/DrawerAllSomeNone.png"/>
-        </div>
-      </div>
-      <div class="teaser">
-        <img width="506" height="406" src="img/SampleTeaser.png"/>
-      </div>
-    </div>
-    <div class="wrapper">
-      <div class="badge">
-        <div class="icon">
-          <img width="34" height="34" src="img/AllSomeNone.png"/>
-        </div>
-        <div class="drawer">
-          <img width="96" height="34" src="img/DrawerAllSomeNone.png"/>
-        </div>
-      </div>
-      <div class="teaser">
-        <img width="506" height="406" src="img/SampleTeaser.png"/>
-      </div>
-    </div>
-    <div class="wrapper">
-      <div class="badge">
-        <div class="icon">
-          <img width="34" height="34" src="img/AllSomeNone.png"/>
-        </div>
-        <div class="drawer">
-          <img width="96" height="34" src="img/DrawerAllSomeNone.png"/>
-        </div>
-      </div>
-      <div class="teaser">
-        <img width="506" height="406" src="img/SampleTeaser.png"/>
-      </div>
-    </div>
+    </td>
+    </tr>
+    </table>
   </body>
 </html>

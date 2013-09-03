@@ -86,6 +86,7 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,addre
 .feature-listing-3 .listing-title img
 {
   margin-right:13px;
+  margin-bottom:-2px;
 }
 
 .feature-listing-3 ul
@@ -311,3 +312,18 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,addre
 {
   clear:both;
 }
+
+/* ============================================================ 
+ This is RTL 
+ =============================================================== */
+
+.div-rtl { direction: rtl; }
+.div-rtl .grey-belt {direction: ltr;}
+.div-rtl #carousel-title {float: right;}
+.div-rtl .feature-listing-3 ul li img {padding-right:0;padding-left: 6px;}
+.div-rtl .feature-listing-3 .listing-title img {margin-right: 0; margin-left: 4px;}
+.div-rtl .feature-listing-3 ul li {letter-spacing: 0;}
+.div-rtl .feature-listing-3 ul {margin: 16px 15px 32px 14px;}
+.div-rtl .bottom-row .col-1 h1 {text-align: left; margin-top: 5px;}
+.div-rtl .bottom-row .col-2 .btn-blue { margin: 7px 0 0 20px;}
+.div-rtl 
