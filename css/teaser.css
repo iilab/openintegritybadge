@@ -23,7 +23,6 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,addre
   font-family:Arial, Helvetica, sans-serif;
   font-size:12px;
   line-height:1;
-  margin:20px auto;
 }
 
 .feature-container p
@@ -53,6 +52,7 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,addre
   display:inline-block;
   width:168px;
   border-right:1px solid #F5F6F7;
+  background: #FFFFFF;
 }
 
 .feature-listing-3 .col-1
