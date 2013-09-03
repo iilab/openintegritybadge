@@ -34,12 +34,24 @@ jQuery(function($) {
     var nid_click = $(this).parent('.entry').attr('id');
     if(!teaser.hasClass('opened')) {
       $.get("https://openintegrity.org/node/"+nid_click+"/overlay", function(data) {
+        if ('.openintegrity link[href=foo]') $('.openintegrity').append('<link rel="stylesheet" type="text/css" href="https://openintegrity.org/badge/css/teaser.css">');
         teaser.html(data);
-        teaser.addClass('opened').show().css({"opacity":0}).css({"z-index":1}).animate({opacity: 1}, 200);
+        teaser.addClass('opened').show().animate({opacity: 1}, 200);
+      	
+	var $containerWidth = $(this).parent().width();
+      	var $offset = $(this).parent().offset();
+
+      	var $tWidth = teaser.width();
+      	var $tHeight = teaser.height();
+
+        teaser.css({
+          'top': $offset.top - ( $tipHeight + 15 ),
+          'left': $offset.left - ( $tipWidth - $containerWidth  ) /2 
+        });
       });                                        
     }
     else {
-      teaser.removeClass('opened').show().css({"opacity": 1}).css({"z-index": -1}).animate({opacity: 0}, 200);      
+      teaser.animate({opacity: 0}, 200).removeClass('opened');      
     }
   });
   
