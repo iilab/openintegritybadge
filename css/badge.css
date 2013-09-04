@@ -1,0 +1,74 @@
+.openintegrity {
+}
+
+.entry {
+    width:96px;
+    height:34px;
+}
+
+.badge {
+    width:96px;
+    height:34px;
+    overflow:hidden;
+    position:static;	
+}
+
+.badge.opened {
+    overflow:hidden;
+    position:relative;	
+    z-index:2;
+}
+
+.icon {
+    top:0px;
+    left:0px;
+    margin: 0 5px 0 0;
+    border: 0px solid black;
+    width: 34px;
+    height: 34px;
+}
+
+.drawer {
+    position:relative;
+    top:-34px;
+    height: 96px;
+    width: 34px;
+    display: none;
+    z-index:-1;
+}
+
+.teaser {
+    position:fixed;
+    opacity:0;
+    z-index:0;
+    display:none;
+}
+
+.teaser.opened {
+    width: 100%;
+    position:relative;
+    opacity:1;
+    display:inline-block;
+    z-index:0;
+}
+
+.teaser.opened .feature-bg {
+    opacity:0.4;
+    background:#000000;
+    z-index:1;
+    height:100%;
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+}
+
+.teaser.opened .feature-container, .teaser.opened .feature-bg img {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); /* Yep! */
+    -ms-transform: translate(-50%,-50%); /* IE 9 */
+    -webkit-transform: translate(-50%,-50%);
+    z-index:2;
+}
