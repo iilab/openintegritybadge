@@ -46,6 +46,14 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,addre
   padding:24px 0 16px;
 }
 
+.feature-listing-3 {
+  background:#FFFFFF;
+}
+
+.feature-listing-3 .clear {
+  clear:both;
+}
+
 .feature-listing-3 .col-1,.feature-listing-3 .col-2,.feature-listing-3 .col-3
 {
   float:left;
@@ -73,6 +81,10 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,addre
   margin-top:-8px;
 }
 
+.top-row a {
+  text-decoration: none;
+}
+
 .feature-listing-3 .listing-title
 {
   text-align:center;
@@ -91,7 +103,7 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,addre
 
 .feature-listing-3 ul
 {
-  margin:16px 0 32px 14px;
+  margin:16px 0 16px 14px;
 }
 
 .feature-listing-3 ul li
