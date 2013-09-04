@@ -16,7 +16,7 @@ jQuery(function($) {
   })     
 
   $('body').on('mouseenter', '.badge', function() {
-    if (!$(this).children('.teaser').hasClass('opened')) { 
+    if (!$(this).hasClass('opened')) { 
       $(this).children('.drawer').addClass('active').show().css({left: -($(this).width())}).css({opacity:0});
       $(this).children('.drawer').animate({left: 0},{duration: 200, queue: false});
       $(this).children('.drawer').animate({opacity:1}, {duration:400, queue: false});
@@ -24,7 +24,7 @@ jQuery(function($) {
   });
   
   $('body').on('mouseleave', '.badge', function() {
-    if (!$(this).children('.teaser').hasClass('opened')) { 
+    if (!$(this).hasClass('opened')) { 
       $(this).children('.drawer').removeClass('active').animate({left: -$(this).width()},{duration: 200, queue: false}).animate({opacity:0}, {duration:200,queue:false});
     }
   });
@@ -33,26 +33,32 @@ jQuery(function($) {
     var teaser=$(this).parent('.entry').children('.teaser');
     var nid_click = $(this).parent('.entry').attr('id');
     if(!teaser.hasClass('opened')) {
-      $.get("https://openintegrity.org/node/"+nid_click+"/overlay", function(data) {
-        if ('.openintegrity link[href=foo]') $('.openintegrity').append('<link rel="stylesheet" type="text/css" href="https://openintegrity.org/badge/css/teaser.css">');
-        teaser.html(data);
-        teaser.addClass('opened').show().animate({opacity: 1}, 200);
-      	
-	var $containerWidth = $(this).parent().width();
-      	var $offset = $(this).parent().offset();
-
-      	var $tWidth = teaser.width();
-      	var $tHeight = teaser.height();
-
-        teaser.css({
-          'top': $offset.top - ( $tipHeight + 15 ),
-          'left': $offset.left - ( $tipWidth - $containerWidth  ) /2 
-        });
-      });                                        
+      $('.openintegrity .teaser').removeClass('opened');
+      teaser.addClass('opened');
+      teaser.html("<div class='feature-bg'><img src='https://openintegrity.org/badge/img/oii-loader-bg.gif' style='margin:5px;padding:0px;' height='32' width='32'/></div>");
+      ret=$.get("https://openintegrity.org/node/"+nid_click+"/overlay", function(data) {
+        if (!($('.openintegrity').children('link').attr('href') == "https://openintegrity.org/badge/css/teaser.css")) {
+          $('.openintegrity').append('<link rel="stylesheet" type="text/css" href="https://openintegrity.org/badge/css/teaser.css">'); 
+        }
+        teaser.html("");
+        teaser.html(teaser.html() + data);
+        teaser.parent('.entry').children('.badge').addClass('opened');
+//        teaser.addClass('opened').show().children('.feature-container');
+        teaser.find("#viewport").carousel("#" + nid_click + " #simplePrevious", "#" + nid_click + " #simpleNext");
+      });
+      console.debug(ret);
     }
     else {
-      teaser.animate({opacity: 0}, 200).removeClass('opened');      
+      teaser.parents('.entry').children('.badge').removeClass('opened');
+      teaser.children('.drawer').removeClass('active').animate({left: -$(this).width()},{duration: 200, queue: false}).animate({opacity:0}, {duration:200,queue:false});
+      teaser.removeClass('opened');      
     }
+  });
+  
+  $('body').on('click', '.feature-bg', function() {
+    $(this).parents('.entry').find('.badge').removeClass('opened');
+    $(this).parents('.entry').find('.drawer').removeClass('active').animate({left: -$(this).width()},{duration: 200, queue: false}).animate({opacity:0}, {duration:200,queue:false});
+    $(this).parent('.teaser').removeClass('opened');
   });
   
   $.force_appear();
@@ -160,3 +166,67 @@ jQuery(function($) {
     }
   });
 })(jQuery);
+
+/**
+ * @author Stéphane Roucheray 
+ * @extends jquery
+ */
+
+
+jQuery.fn.carousel = function(previous, next, options){
+        var sliderList = jQuery(this).children()[0];
+        
+        if (sliderList) {
+                var increment = jQuery(sliderList).children().outerWidth(true),
+                elmnts = jQuery(sliderList).children(),
+                numElmts = elmnts.length,
+                sizeFirstElmnt = increment,
+                shownInViewport = Math.round(jQuery(this).width() / sizeFirstElmnt),
+                firstElementOnViewPort = 1,
+                isAnimating = false;
+                
+                if (elmnts.length > 1) {
+                  for (i = 0; i < shownInViewport; i++) {
+                          jQuery(sliderList).css('width',(numElmts+shownInViewport)*increment + increment + "px");
+                          jQuery(sliderList).append(jQuery(elmnts[i]).clone());
+                  }
+                }
+                jQuery(previous).click(function(event){
+                        if (!isAnimating) {
+                                if (firstElementOnViewPort == 1) {
+                                        jQuery(sliderList).css('left', "-" + numElmts * sizeFirstElmnt + "px");
+                                        firstElementOnViewPort = numElmts;
+                                }
+                                else {
+                                        firstElementOnViewPort--;
+                                }
+                                
+                                jQuery(sliderList).animate({
+                                        left: "+=" + increment,
+                                        y: 0,
+                                        queue: true
+                                }, "swing", function(){isAnimating = false;});
+                                isAnimating = true;
+                        }
+                        
+                });
+                
+                jQuery(next).click(function(event){
+                        if (!isAnimating) {
+                                if (firstElementOnViewPort > numElmts) {
+                                        firstElementOnViewPort = 2;
+                                        jQuery(sliderList).css('left', "0px");
+                                }
+                                else {
+                                        firstElementOnViewPort++;
+                                }
+                                jQuery(sliderList).animate({
+                                        left: "-=" + increment,
+                                        y: 0,
+                                        queue: true
+                                }, "swing", function(){isAnimating = false;});
+                                isAnimating = true;
+                        }
+                });
+        }
+};
