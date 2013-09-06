@@ -1,5 +1,11 @@
 jQuery(function($) {
 
+  $.ajaxSetup({async:false});
+  if (!($('head').children('link').attr('href') == "https://openintegrity.org/badge/css/badge.css")) {
+    $('head').append('<link type="text/css" rel="stylesheet" href="https://openintegrity.org/badge/css/badge.css" media="all" />');
+  }
+  $.ajaxSetup({async:true});
+  
   $('.entry').appear();
 
   $('body').on('appear', '.entry', function(e, $affected) {
@@ -43,10 +49,9 @@ jQuery(function($) {
         teaser.html("");
         teaser.html(teaser.html() + data);
         teaser.parent('.entry').children('.badge').addClass('opened');
-//        teaser.addClass('opened').show().children('.feature-container');
+        teaser.addClass('opened').show().children('.feature-container');
         teaser.find("#viewport").carousel("#" + nid_click + " #simplePrevious", "#" + nid_click + " #simpleNext");
       });
-      console.debug(ret);
     }
     else {
       teaser.parents('.entry').children('.badge').removeClass('opened');
