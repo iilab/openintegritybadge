@@ -1,25 +1,25 @@
 .openintegrity {
 }
 
-.entry {
+.oii-entry {
     width:96px;
     height:34px;
 }
 
-.badge {
+.oii-badge {
     width:96px;
     height:34px;
     overflow:hidden;
     position:static;	
 }
 
-.badge.opened {
+.oii-badge.opened {
     overflow:hidden;
     position:relative;	
     z-index:2;
 }
 
-.icon {
+.oii-icon {
     top:0px;
     left:0px;
     margin: 0 5px 0 0;
@@ -28,7 +28,7 @@
     height: 34px;
 }
 
-.drawer {
+.oii-drawer {
     position:relative;
     top:-34px;
     height: 96px;
@@ -37,14 +37,14 @@
     z-index:-1;
 }
 
-.teaser {
+.oii-teaser {
     position:fixed;
     opacity:0;
     z-index:0;
     display:none;
 }
 
-.teaser.opened {
+.oii-teaser.opened {
     width: 100%;
     position:relative;
     opacity:1;
@@ -52,7 +52,7 @@
     z-index:0;
 }
 
-.teaser.opened .feature-bg {
+.oii-teaser.opened .feature-bg {
     opacity:0.4;
     background:#000000;
     z-index:1;
@@ -63,7 +63,7 @@
     left:0;
 }
 
-.teaser.opened .feature-container, .teaser.opened .feature-bg img {
+.oii-teaser.opened .feature-container, .oii-teaser.opened .feature-bg img {
     position: fixed;
     left: 50%;
     top: 50%;

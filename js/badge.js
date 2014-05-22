@@ -6,9 +6,9 @@ jQuery(function($) {
   }
   $.ajaxSetup({async:true});
   
-  $('.entry').appear();
+  $('.oii-entry').appear();
 
-  $('body').on('appear', '.entry', function(e, $affected) {
+  $('body').on('appear', '.oii-entry', function(e, $affected) {
     badge="<img src='https://openintegrity.org/badge/img/oii-loader.gif' style='margin:5px;padding:0px;' height='24' width='24'>";
     var entry=$(this);
     if (!entry.hasClass('processed')) {
@@ -21,25 +21,25 @@ jQuery(function($) {
     }
   })     
 
-  $('body').on('mouseenter', '.badge', function() {
+  $('body').on('mouseenter', '.oii-badge', function() {
     if (!$(this).hasClass('opened')) { 
-      $(this).children('.drawer').addClass('active').show().css({left: -($(this).width())}).css({opacity:0});
-      $(this).children('.drawer').animate({left: 0},{duration: 200, queue: false});
-      $(this).children('.drawer').animate({opacity:1}, {duration:400, queue: false});
+      $(this).children('.oii-drawer').addClass('active').show().css({left: -($(this).width())}).css({opacity:0});
+      $(this).children('.oii-drawer').animate({left: 0},{duration: 200, queue: false});
+      $(this).children('.oii-drawer').animate({opacity:1}, {duration:400, queue: false});
     }
   });
   
-  $('body').on('mouseleave', '.badge', function() {
+  $('body').on('mouseleave', '.oii-badge', function() {
     if (!$(this).hasClass('opened')) { 
-      $(this).children('.drawer').removeClass('active').animate({left: -$(this).width()},{duration: 200, queue: false}).animate({opacity:0}, {duration:200,queue:false});
+      $(this).children('.oii-drawer').removeClass('active').animate({left: -$(this).width()},{duration: 200, queue: false}).animate({opacity:0}, {duration:200,queue:false});
     }
   });
    
-  $('body').on('click', '.badge', function() {
-    var teaser=$(this).parent('.entry').children('.teaser');
-    var nid_click = $(this).parent('.entry').attr('id');
+  $('body').on('click', '.oii-badge', function() {
+    var teaser=$(this).parent('.oii-entry').children('.oii-teaser');
+    var nid_click = $(this).parent('.oii-entry').attr('id');
     if(!teaser.hasClass('opened')) {
-      $('.openintegrity .teaser').removeClass('opened');
+      $('.openintegrity .oii-teaser').removeClass('opened');
       teaser.addClass('opened');
       teaser.html("<div class='feature-bg'><img src='https://openintegrity.org/badge/img/oii-loader-bg.gif' style='margin:5px;padding:0px;' height='32' width='32'/></div>");
       ret=$.get("https://openintegrity.org/node/"+nid_click+"/overlay", function(data) {
@@ -48,22 +48,22 @@ jQuery(function($) {
         }
         teaser.html("");
         teaser.html(teaser.html() + data);
-        teaser.parent('.entry').children('.badge').addClass('opened');
+        teaser.parent('.oii-entry').children('.oii-badge').addClass('opened');
         teaser.addClass('opened').show().children('.feature-container');
         teaser.find("#viewport").carousel("#" + nid_click + " #simplePrevious", "#" + nid_click + " #simpleNext");
       });
     }
     else {
-      teaser.parents('.entry').children('.badge').removeClass('opened');
-      teaser.children('.drawer').removeClass('active').animate({left: -$(this).width()},{duration: 200, queue: false}).animate({opacity:0}, {duration:200,queue:false});
+      teaser.parents('.oii-entry').children('.oii-badge').removeClass('opened');
+      teaser.children('.oii-drawer').removeClass('active').animate({left: -$(this).width()},{duration: 200, queue: false}).animate({opacity:0}, {duration:200,queue:false});
       teaser.removeClass('opened');      
     }
   });
   
   $('body').on('click', '.feature-bg', function() {
-    $(this).parents('.entry').find('.badge').removeClass('opened');
-    $(this).parents('.entry').find('.drawer').removeClass('active').animate({left: -$(this).width()},{duration: 200, queue: false}).animate({opacity:0}, {duration:200,queue:false});
-    $(this).parent('.teaser').removeClass('opened');
+    $(this).parents('.oii-entry').find('.oii-badge').removeClass('opened');
+    $(this).parents('.oii-entry').find('.oii-drawer').removeClass('active').animate({left: -$(this).width()},{duration: 200, queue: false}).animate({opacity:0}, {duration:200,queue:false});
+    $(this).parent('.oii-teaser').removeClass('opened');
   });
   
   $.force_appear();
