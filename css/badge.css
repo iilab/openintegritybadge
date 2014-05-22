@@ -31,8 +31,8 @@
 .oii-drawer {
     position:relative;
     top:-34px;
-    height: 96px;
-    width: 34px;
+    height: 34px;
+    width: 96px;
     display: none;
     z-index:-1;
 }
