@@ -85,6 +85,10 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,addre
   text-decoration: none;
 }
 
+.bottom-row .col-2 a:visited, .bottom-row .col-2 a {
+  color: #FFF;
+}
+
 .feature-listing-3 .listing-title
 {
   text-align:center;
@@ -286,7 +290,7 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,addre
 
 .btn-blue
 {
-  background:#4c55a5;
+  background:#4138E8;
   color:#fff;
   text-transform:uppercase;
   font-size:11px;
